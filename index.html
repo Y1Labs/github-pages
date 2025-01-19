@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered Image</title>
 <style>
-.verticalhorizontal {
-    display: table-cell;
-    height: 386px;
-    text-align: center;
-    width: 579px;
-    vertical-align: middle;
-}
+  body {
+    background-color: #4A6D9D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+  }
+
+  img {
+    max-width: 100%; /* Ensure the image is responsive */
+    max-height: 100%; /* Ensure it doesn't overflow */
+  }
 </style>
 </head>
-<body style="background-color:#1E4251;">
-
-<img src="Y1Labs.png" alt="Y1Labs is coming soon..." style="width:50%;">
-
+<body>
+  <img src="Y1Labs.png" alt="Y1Labs is coming soon...">
 </body>
 </html>
